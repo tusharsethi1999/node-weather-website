@@ -23,7 +23,9 @@ weatherForm.addEventListener('submit', (e) => {
                 return messageOne.textContent = data.error;  
             }
             messageOne.textContent = data.location;
-            messageTwo.textContent = data.forecast;
+            messageTwo.textContent = data.forecast.description + '. Wind speed is ' 
+            + data.forecast.windSpeed + '. Temperature is ' + data.forecast.temperature + 
+            '. Feels like ' + data.forecast.feelslike;
         });
     });
 

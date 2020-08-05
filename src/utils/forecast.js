@@ -13,6 +13,7 @@ forecast = (latitude, longitude, callback) => {
             callback('Unable to find location', undefined);
         } else {
             callback(undefined,{
+                windSpeed: body.current.wind_speed,
                 placename: body.location.name,
                 temperature: body.current.temperature,
                 feelslike: body.current.feelslike,
