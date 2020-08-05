@@ -37,7 +37,8 @@ app.get('/about', (req, res) => {
 app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Get Help!',
-        message: 'Please Help Me!', 
+        message: 'Hello this is Tushar Sethi, a student of PESU ECC. I know the picture isn\'t me  on' + 
+        ' the \'About\' page but what fun is a website without a little humour', 
         name: 'Tushar Sethi'
     })
 })
